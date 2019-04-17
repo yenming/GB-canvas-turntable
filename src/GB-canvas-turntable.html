@@ -47,16 +47,6 @@
 
   <div class="wrapper typo" id="wrapper">
 
-    <h1>GB-canvas-turntable.js</h1>
-
-    <h2>DEMO</h2>
-
-
-    <h3>
-      <a href="javascript:;" id="normal">文字 + 图片</a>
-    </h3>
-
-
     <section id="turntable" class="gb-turntable">
       <div class="gb-turntable-container">
         <canvas class="gb-turntable-canvas" width="300" height="300px">抱歉！浏览器不支持。</canvas>
@@ -64,34 +54,6 @@
 
       <a class="gb-turntable-btn" href="javascript:;">抽奖</a>
     </section>
-
-
-    <pre>
-gbTurntable.init({
-    id: 'turntable',
-    config: function(callback){
-        // 获取奖品信息
-        // 奖项 text 属性不能为空，用于显示或抽中奖品提示
-        // img 为奖品图片地址，如果不为空则转盘奖品按图片方式显示
-         callback && callback([{ text: '1元红包', img: 'images/redpacket.png' }, { text: '2元红包' }, { text: '3元红包' }, { text: '显示器',
-        img: 'images/display.png' }, { text: '5元红宝' }, { text: '6元红宝' }])
-    },
-    getPrize: function(callback) {
-        // 获取中奖信息
-        var num = Math.random() * 6 >>> 0,   //奖品ID
-            chances = num;  // 可抽奖次数
-            callback && callback([num, chances]);
-    },
-    gotBack: function(data) {
-        alert('恭喜抽中' + data);
-    }
-});
-</pre>
-
-
-
-
-
   </div>
 
   <div class="fork-github">
@@ -105,22 +67,86 @@ gbTurntable.init({
       gbTurntable.init({
         id: 'turntable',
         config: function (callback) {
-          // 获取奖品信息
-          // callback && callback(['11元红包','2元红包','3元红包','4元红包','5元红包','6元红包']);
           callback && callback([{
-            text: '1元红包',
-            img: 'images/redpacket.png'
-          }, {
-            text: '2元红包'
-          }, {
-            text: '3元红包'
-          }, {
-            text: '显示器',
-            img: 'images/display.png'
-          }, {
-            text: '5元红宝'
-          }, {
-            text: '6元红宝'
+            text: '象山'
+          },
+          {
+            text: '台北101/世貿'
+          },
+          {
+            text: '信義安和'
+          },
+          {
+            text: '	大安'
+          },
+          {
+            text: '大安森林公園'
+          },{
+            text: '東門'
+          },
+          {
+            text: '中正紀念堂'
+          },
+          {
+            text: '台大醫院'
+          },
+          {
+            text: '台北車站'
+          },
+          {
+            text: '中山'
+          },
+          {
+            text: '雙連'
+          },
+          {
+            text: '	民權西路'
+          },
+          {
+            text: '圓山'
+          },{
+            text: '劍潭'
+          },
+          {
+            text: '士林'
+          },
+          {
+            text: '芝山'
+          },
+          {
+            text: '明德'
+          },
+          {
+            text: '石牌'
+          },
+          {
+            text: '唭哩岸'
+          },
+          {
+            text: '	奇岩'
+          },
+          {
+            text: '北投'
+          },{
+            text: '新北投'
+          },
+          {
+            text: '復興崗'
+          },
+          {
+            text: '忠義'
+          },
+          {
+            text: '關渡'
+          },
+          {
+            text: '竹圍'
+          },
+          {
+            text: '	紅樹林'
+          },
+          {
+            text: '淡水'
           }])
         },
         getPrize: function (callback) {

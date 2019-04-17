@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>GB Canvas Turntable</title>
-  <link rel="stylesheet" href="css/typo/typo.css">
-  <link rel="stylesheet" href="css/GB-canvas-turntable.css">
+  <link rel="stylesheet" href="src/css/typo/typo.css">
+  <link rel="stylesheet" href="src/css/GB-canvas-turntable.css">
   <style>
     .wrapper {
       padding: 20px 40px;
@@ -61,7 +61,7 @@
   </div>
 
 
-  <script src="js/GB-canvas-turntable.js"></script>
+  <script src="src/js/GB-canvas-turntable.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       gbTurntable.init({
@@ -151,7 +151,7 @@
         },
         getPrize: function (callback) {
           // 获取中奖信息
-          var num = Math.random() * 6 >>> 0, //奖品ID
+          var num = Math.random() * 1 >>> 0, //奖品ID
             chances = num; // 可抽奖次数
           callback && callback([num, chances]);
         },

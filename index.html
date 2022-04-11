@@ -65,10 +65,19 @@
         config: function (callback) {
           callback && callback([
           {
-            text: '台北車站'
+            id:1,
+            text: '台北車站',
+            count:0
           },
           {
-            text: '民權西路'
+            id:2,
+            text: '',
+            count:0
+          },
+          {
+            id:3,
+            text: '民權西路',
+            count:0
           },
           {
             text: '圓山'
@@ -93,11 +102,12 @@
           },
           {
             text: '忠孝新生'
-          }])
+          }
+        ])
         },
         getPrize: function (callback) {
-          // 获取中奖信息
-          var num = Math.random() * 6 >>> 0, //奖品ID
+          // 获取中獎信息
+          var num = Math.random() * 15 >>> 0,
             chances = num; // 可抽奖次数
           callback && callback([num, chances]);
         },
